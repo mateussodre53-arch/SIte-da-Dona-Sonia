@@ -19,14 +19,19 @@ header {
 nav {
   display: flex; /*coloca a lista ao lado da imagem*/
   justify-content: space-between;/*deixa a lista e a imagem um em cada lado*/
+  width: 95%;
+  margin: auto;
 }
+
+
 
 ul {
   display: flex; /*deixa os itens da lista uma ao lado da outra*/ 
-  justify-content: space-evenly; /*da espaco entre os itens da lista*/
-  width: 45%; /*da a largura na lista*/
+  gap: 50px;/*da espasamento entre os icones*/
   align-items: center; /*centraliza a lista no centro, no sentido horizontal*/
   list-style: none; /*tira a bolinha da lista*/
+  
+  
 }
 
 a{
@@ -47,3 +52,62 @@ background-color: aliceblue;
   padding: 10px 30px;
   color: blueviolet;
 }
+
+#banner{
+  width: 1100;
+
+}
+
+#banner__image{
+  width: 1100px;
+  margin-top: 20px;
+}
+
+.reserva{
+  width: 1100px;
+  border: 2px dashed #3B929C; 
+  color: #3B929C;
+  text-align: center;
+  font-size: 10px;
+}
+
+.area-banner{
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+}
+
+
+#reserva__butao{
+  padding: 10px 60px;
+  color:white;
+  font-size: 20px;
+  background-color: #3B929C;
+  border:none;
+  border-radius: 15px;
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+
+#reserva{
+  margin-top: 20x;
+}
+
+.area-sobre{ 
+   color: #3B929C;
+   display: flex;
+   margin: auto;
+   width: 1100px;
+   margin-top: 20px;
+   justify-content: space-around;
+}
+
+.sobre{
+  color: #3B929C;
+  width: 500px;
+}
+
+.sobre__foto{
+  width: 500px;
+}
+
