@@ -1,24 +1,23 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap');
 
-
-
-
-
 * {
   margin: 0;
   padding: 0;
+  font-family:'Oxygen'; /*define a fonte selecionada no google*/
 }
 
 header {
   background-color: #e7adcd;
   width: 100%;
-  height: 90px
+  height: 110px
 }
 
 nav {
   display: flex; /*coloca a lista ao lado da imagem*/
   justify-content: space-between;/*deixa a lista e a imagem um em cada lado*/
+  align-items: center;
+  height: 110px;
   width: 95%;
   margin: auto;
 }
@@ -28,7 +27,6 @@ nav {
 ul {
   display: flex; /*deixa os itens da lista uma ao lado da outra*/ 
   gap: 50px;/*da espasamento entre os icones*/
-  align-items: center; /*centraliza a lista no centro, no sentido horizontal*/
   list-style: none; /*tira a bolinha da lista*/
   
   
@@ -36,39 +34,42 @@ ul {
 
 a{
   text-decoration: none; /*pra tirar o sublinhado do "a"*/
-  font-family: 'Oxygen'; /*define a fonte selecionada no google*/
-  font-size: 20px; /*define o tamanho do texto*/
-  border: solid 2px white; /*cria uma borda*/
-  padding: 5px; /*espaso dentro entre as letars e a broda*/
-  border-radius: 0 10px 0 10px ; /*arredonda as beiras*/
+  color: #FFFFFF;
+  font-size: 25px; /*define o tamanho do texto*/
+  border: 2px solid #FFFFFF; /*cria uma borda*/
+  padding: 10px;/*espaso dentro entre as letars e a broda*/
+  border-radius: 0 20px;/*arredonda as beiras*/
 }
 
 a:hover{ /*para mudar a cor quando pasar o dedo no botao*/
-background-color: aliceblue; 
-
+background-color: #FFFFFF;
+color: #3B929C;
 }
 
 .icones{
-  padding: 10px 30px;
-  color: blueviolet;
+  padding: 10px 50px;
+  
 }
 
 #banner{
-  width: 1100;
+  width: 1400px;
 
 }
 
 #banner__image{
-  width: 1100px;
-  margin-top: 20px;
+  margin-top: 10px;
+  width: 1400px;
+  
 }
 
-.reserva{
-  width: 1100px;
-  border: 2px dashed #3B929C; 
-  color: #3B929C;
-  text-align: center;
-  font-size: 10px;
+#reservas{
+    width: 1400px;
+    height: 144px;
+    border: 2px dashed #3B929C;
+    color: #3B929C;
+    text-align: center;
+    font-size: 20px;
+    margin-top: 10px;
 }
 
 .area-banner{
@@ -78,28 +79,25 @@ background-color: aliceblue;
 }
 
 
-#reserva__butao{
-  padding: 10px 60px;
-  color:white;
-  font-size: 20px;
+#reservas__botao{
+  padding: 20px 60px;
+  color:#FFFFFF;
+  font-size: 22px;
   background-color: #3B929C;
   border:none;
   border-radius: 15px;
   margin-top: 15px;
-  margin-bottom: 20px;
 }
 
-#reserva{
-  margin-top: 20x;
+#reservas__titulo{
+  margin-top: 15x;
 }
 
 .area-sobre{ 
-   color: #3B929C;
-   display: flex;
-   margin: auto;
-   width: 1100px;
-   margin-top: 20px;
-   justify-content: space-around;
+    display: flex;
+    width: 1400px;
+    margin:20px auto;
+    justify-content: space-around;
 }
 
 .sobre{
@@ -112,9 +110,64 @@ background-color: aliceblue;
 }
 
 .sobre__titulo{
-  
+margin-top: 30px;
+font-size: 50px;
 }
+
 .sobre__texto{
   margin-top: 30px;
-  font-size: 30px;}
+  font-size: 30px;
+}
 
+ .area-busca{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ }
+
+ .catalogo-titulo{
+    font-size: 50px;
+    color:#3B929C;
+    margin-bottom: 50px;
+ }
+
+ .busca{
+    display: flex;
+    width: 764px;
+    height: 40px;
+    border: 3px solid #3B929C;
+    border-radius: 20px;
+    padding: 5px;
+    justify-content: center;
+ }
+ .busca__campo{
+    flex: 1 ;
+    border: none;
+    outline: none;
+    font-size: 25px;
+ }
+
+ .busca__botao{
+    font-size: 30px;
+    border: none;
+    color: #3B929C;
+    background: none;
+ }
+
+ .bordados > a > img{
+    width: 400px;
+    border-radius: 20px;
+ }
+
+ .bordados{
+    text-align: center;
+ }
+
+ .catalogo{
+    margin:100px  auto;
+    width: 1400px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+ }
