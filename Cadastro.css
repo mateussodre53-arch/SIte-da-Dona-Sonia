@@ -1,0 +1,36 @@
+@import url(style.css); /*o @ importa as bugigangas da outra pagina*/
+
+*{
+    margin:0;
+    padding:0;
+
+}
+
+.area-cadastro{
+    margin: 50px auto;/*margem top e baixo direita esquerda*/
+    width: 60vw;
+    background-color: var(--cor-principal);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.form-cadastro > div{ /*pega tudo que precisa da mesma formataçao*/
+    display: flex;
+    gap: 30px;
+}
+.area-nome{
+    display: flex;
+    gap: 30px;
+}
+
+.area-acesso{
+    display: flex;
+    gap: 30px;
+}
+
+.area-contato{
+    display: flex;
+    gap: 30px;
+}
