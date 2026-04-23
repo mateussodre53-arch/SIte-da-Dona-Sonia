@@ -7,7 +7,7 @@
 }
 
 .area-cadastro{
-    margin: 50px auto;/*margem top e baixo direita esquerda*/
+    margin: 50px auto;/*margem top, baixo, direita e esquerda*/
     width: 60vw;
     background-color: var(--cor-principal);
     display: flex;
@@ -16,21 +16,64 @@
     gap: 20px;
 }
 
+.area-formulario{
+    display: flex;
+    justify-content: center;
+    width: 60vw;
+}
+
 .form-cadastro > div{ /*pega tudo que precisa da mesma formataçao*/
     display: flex;
+    justify-content: center;
     gap: 30px;
-}
-.area-nome{
-    display: flex;
-    gap: 30px;
+    width: 50vw;
 }
 
-.area-acesso{
-    display: flex;
-    gap: 30px;
+.ddd input{
+    width: 4vw;
 }
 
-.area-contato{
+/*#telefone{
+    flex: 2;
+}*/
+
+/*#numero{
+    width: 4vw;
+    flex: 1;
+}*/
+
+.formatacao div{
     display: flex;
-    gap: 30px;
+    flex-direction: column;
+    flex: 1;
+}
+
+#ddd, #numero{
+    width: 4vw;
+}
+
+input, select{
+    width: 100%;
+    padding: 7px;
+    margin: 8px;
+} 
+
+.area-botao{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#botao-cadastrar{
+    width: 50%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    
+}
+
+.link-login{
+    margin-top: -25px;
 }
