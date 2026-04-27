@@ -1,79 +1,148 @@
-@import url(style.css); /*o @ importa as bugigangas da outra pagina*/
+@import url(style.css);
+/*o @ importa as bugigangas da outra pagina*/
 
-*{
-    margin:0;
-    padding:0;
-
+* {
+    margin: 0;
+    padding: 0;
 }
 
-.area-cadastro{
-    margin: 50px auto;/*margem top, baixo, direita e esquerda*/
-    width: 60vw;
+.area-cadastro {
     background-color: var(--cor-principal);
+    margin: 150px auto;
+    /*margem top, baixo, direita e esquerda*/
+    width: 60vw;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 20px;
+    padding: 50px;
+    box-sizing: border-box;
+    /*trava o tamanho da caixa pros lados, usando o paddind*/
+    border-radius: 20px;
+
 }
 
-.area-formulario{
+.area-formulario {
     display: flex;
     justify-content: center;
     width: 60vw;
 }
 
-.form-cadastro > div{ /*pega tudo que precisa da mesma formataçao*/
+.area-formulario>div {
+    /*pega tudo que precisa da mesma formataçao*/
     display: flex;
-    justify-content: center;
-    gap: 30px;
-    width: 50vw;
+    gap: 50px;
 }
 
-.ddd input{
-    width: 4vw;
+div {
+    width: 100%;
+    display: flex;
 }
 
-/*#telefone{
-    flex: 2;
-}*/
-
-/*#numero{
-    width: 4vw;
-    flex: 1;
-}*/
-
-.formatacao div{
+.area-endereco {
     display: flex;
     flex-direction: column;
-    flex: 1;
+    gap: 1rem;
 }
 
-#ddd, #numero{
-    width: 4vw;
+input,
+select {
+    padding: 7px 0;
+    margin-bottom: 8px;
 }
 
-input, select{
-    width: 100%;
-    padding: 7px;
-    margin: 8px;
-} 
-
-.area-botao{
+.area-botao {
     margin-top: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 50px;
 }
 
-#botao-cadastrar{
+#botao-cadastrar {
     width: 50%;
     padding: 10px;
     border: none;
     border-radius: 5px;
     font-size: 1.1em;
-    
+}
+
+.titulo-campo {
+    display: flex;
+    flex-direction: column;
+}
+
+.formatacao {
+    gap: 1rem;
+}
+
+form {
+    width: 50vw;
+}
+
+.ddd,
+.numero {
+    width: 100px;
+}
+
+.cep {
+    width: 200px;
+}
+
+input,
+select {
+    border-radius: 7px;
+    padding: 10px;
+    border: none;
+    font-size: 1.1em;
+}
+
+@media (max-width:440px) {
+
+    .area-cadastro {
+        width: 100vW;
+        margin-top: 8vh;
+        background: none;
+        color: var(--cor-principal);
+    }
+
+    form {
+        width: 85vw;
+    }
+
+    .formatacao {
+        flex-direction: column;
+    }
+
+    .area-contato, .endereco-numero, .cidade-cep{
+        flex-direction: row;
+    }
+
+    input,
+    select {
+        border: 2px solid var(--cor-principal);
+    }
+
+    .cep{
+        width: 30vw;
+    }
+
+#botao-cadastrar{
+    background-color: var(--cor-principal);
+    color: var(--cor-secundaria);
 }
 
 .link-login{
-    margin-top: -25px;
+    color: var(--cor-principal);
+}
+
+
+
+
+
+
+
+
+
+
 }
