@@ -136,6 +136,10 @@ select {
     color: var(--cor-principal);
 }
 
+.link-login{
+    color: var(--cor-principal);
+}
+
 
 
 
