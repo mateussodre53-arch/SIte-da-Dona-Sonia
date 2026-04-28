@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Login</title>
+
+</head>
+
+<body>
+    <header>
+        <nav class="area-navegacao">
+            <img class="logo" src="/Imagens/logo dos bosrdados.png" alt="Logo do site" width="150px" height="110px">
+            <ul>
+                <li><a class="icones" href="index.html"><i class="fa-solid fa-house-chimney"></i></a></li>
+                <li><a class="icones" href="#bordados"><i class="fa-solid fa-scissors"></i></a></li>
+                <li><a class="icones" href="#"><i class="fa-solid fa-cart-arrow-down"></i></a></li>
+                <li><a class="icones" href="Cadastro.html"><i class="fa-solid fa-user-gear"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="area-cadastro">
+        <section class="area-titulo">
+            <h1>Login</h1>
+        </section>
+
+        <section class="area-formulario">
+            <form action="#" class="form-cadastro ">
+                <div class="area-acesso formatacao"> <!--para criar direto usa div . ou # + nome da clase ou id-->
+                    <div class="usuario-email titulo-campo">
+                        <label for="login">Nome de usuário ou E-mail</label>
+                        <input type="text" id="login" placeholder="Digite seu nome de usuário ou e-mail" required>
+                    </div>
+
+                    <div class="senha titulo-campo">
+                        <label for="senha">Senha</label>
+                        <input type="password" id="senha" placeholder="••••••••••••" required>
+                        <a href="#" class="esqueci-senha">Esqueci a senha?</a>
+                    </div>
+
+                    <div class="area-botao formatacao">
+                        <button type="submit">Fazer login</button>
+                        <a href="Cadastro.html" class="link-login">Não tem uma conta? Crie agora, totalmente grátis!</a>
+                        
+                    </div>
+                </div>
+
+            </form>
+        </section>
+    </main>
+<footer class="rodape">
+    <nav class="nav-rodape">
+        <p>A tia sonia agradece a sua visita, ficou alguma duvida? entre em contatoa <a href="https://w.app/bordados-da-sonia" target="_blank">por aqui</a></p>
+        <P>todos os direitos reservados</P>
+    </nav>
+</footer>
+</body>
+
+</html>

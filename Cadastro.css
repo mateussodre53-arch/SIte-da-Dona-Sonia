@@ -114,7 +114,9 @@ select {
         flex-direction: column;
     }
 
-    .area-contato, .endereco-numero, .cidade-cep{
+    .area-contato,
+    .endereco-numero,
+    .cidade-cep {
         flex-direction: row;
     }
 
@@ -123,22 +125,22 @@ select {
         border: 2px solid var(--cor-principal);
     }
 
-    .cep{
+    .cep {
         width: 30vw;
     }
 
-#botao-cadastrar{
-    background-color: var(--cor-principal);
-    color: var(--cor-secundaria);
-}
+    #botao-cadastrar {
+        background-color: var(--cor-principal);
+        color: var(--cor-secundaria);
+    }
 
-.link-login{
-    color: var(--cor-principal);
-}
+    .link-login {
+        color: var(--cor-principal);
+    }
 
-.link-login{
-    color: var(--cor-principal);
-}
+    .link-login {
+        color: var(--cor-principal);
+    }
 
 
 
